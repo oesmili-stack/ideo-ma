@@ -89,7 +89,7 @@ export default function Solutions() {
             <p className="text-[#888780] leading-relaxed mb-4">
               {t('solutions.cyberaware.description')}
             </p>
-            <Link href="/cyberaware" className="text-[#D42027] font-semibold hover:underline">
+            <Link href="/solutions/cyberaware" className="text-[#D42027] font-semibold hover:underline">
               {t('solutions.cyberaware.link')} →
             </Link>
           </div>
