@@ -1,0 +1,99 @@
+{
+  "redirects": [
+    {
+      "source": "/nous-connaitre",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/nous-connaitre/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/on-parle-de-nous",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/on-parle-de-nous/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/category/on-parle-de-nous",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/category/on-parle-de-nous/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/learner-success",
+      "destination": "/services/learning-services",
+      "permanent": true
+    },
+    {
+      "source": "/learner-success/",
+      "destination": "/services/learning-services",
+      "permanent": true
+    },
+    {
+      "source": "/ressources",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ressources/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/2025/:path*",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/2024/:path*",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/2023/:path*",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/2022/:path*",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/2021/:path*",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/2020/:path*",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/2019/:path*",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/2018/:path*",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/category/:path*",
+      "destination": "/about",
+      "permanent": true
+    }
+  ]
+}
