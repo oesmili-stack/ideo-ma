@@ -39,10 +39,10 @@ export default function IntroductionSection() {
               {index > 0 && (
                 <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-px h-12 bg-[#E5E7EB]" />
               )}
-              <div className="text-[44px] font-extrabold text-[#D42027] mb-2 whitespace-nowrap">
+              <div className="text-[28px] sm:text-[44px] font-extrabold text-[#D42027] mb-2 whitespace-nowrap">
                 {stat.number}
               </div>
-              <div className="text-[15px] text-[#666666] leading-tight">
+              <div className="text-[13px] sm:text-[15px] text-[#666666] leading-tight">
                 {stat.label}
               </div>
             </div>
