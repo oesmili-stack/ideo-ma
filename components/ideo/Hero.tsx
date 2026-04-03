@@ -162,57 +162,6 @@ export default function Hero() {
         </div>
       )}
 
-      <style jsx global>{`
-        @keyframes heroMarquee {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-33.33%);
-          }
-        }
-        .hero-marquee {
-          animation: heroMarquee 25s linear infinite;
-        }
-        @media (min-width: 768px) {
-          .hero-marquee {
-            animation: heroMarquee 60s linear infinite;
-          }
-        }
-        @keyframes float {
-          0%, 100% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(-20px);
-          }
-        }
-        @keyframes float-delayed {
-          0%, 100% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(-15px);
-          }
-        }
-        @keyframes float-delayed-2 {
-          0%, 100% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(-25px);
-          }
-        }
-        .animate-float {
-          animation: float 3s ease-in-out infinite;
-        }
-        .animate-float-delayed {
-          animation: float-delayed 4s ease-in-out infinite;
-        }
-        .animate-float-delayed-2 {
-          animation: float-delayed-2 3.5s ease-in-out infinite;
-        }
-      `}</style>
     </section>
   );
 }
