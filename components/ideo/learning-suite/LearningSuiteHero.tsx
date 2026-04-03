@@ -7,8 +7,12 @@ import Link from 'next/link';
 export default function LearningSuiteHero() {
   const { t } = useLanguage();
 
+  // Get the title and ensure ! stays on the same line
+  const heroTitle = t('suite.hero.title');
+  const formattedTitle = heroTitle.replace(/ !/, '\u00A0!').replace(/ \!/, '\u00A0!');
+
   return (
-    <section className="relative pt-32 pb-32 overflow-visible bg-[#EDEDEE]">
+    <section className="relative pt-28 sm:pt-32 pb-20 sm:pb-32 overflow-visible bg-[#EDEDEE]">
       <div
         className="absolute inset-0"
         style={{
@@ -20,7 +24,7 @@ export default function LearningSuiteHero() {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <div className="mb-6">
               <Image
@@ -32,8 +36,8 @@ export default function LearningSuiteHero() {
               />
             </div>
 
-            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              {t('suite.hero.title')}
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              {formattedTitle}
             </h1>
 
             <p className="section-subtitle mb-8">

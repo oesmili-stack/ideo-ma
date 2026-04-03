@@ -54,22 +54,11 @@ export default function AELDimensions() {
 
           {/* Center - Grid Area: Row 2, Col 2 */}
           <div className="col-start-2 row-start-2 relative flex items-center justify-center">
-            {/* Orbit ring - behind everything */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[360px] h-[360px] border border-dashed border-[rgba(212,32,39,0.12)] rounded-full pointer-events-none -z-10" />
-
-            {/* Vertical connector - top */}
             <div className="absolute bottom-full left-1/2 -translate-x-1/2 w-[2px] h-6 bg-[rgba(212,32,39,0.2)]" />
-
-            {/* Vertical connector - bottom */}
             <div className="absolute top-full left-1/2 -translate-x-1/2 w-[2px] h-6 bg-[rgba(212,32,39,0.2)]" />
-
-            {/* Horizontal connector - left */}
             <div className="absolute right-full top-1/2 -translate-y-1/2 h-[2px] w-6 bg-[rgba(212,32,39,0.2)]" />
-
-            {/* Horizontal connector - right */}
             <div className="absolute left-full top-1/2 -translate-y-1/2 h-[2px] w-6 bg-[rgba(212,32,39,0.2)]" />
-
-            {/* Center circle with logo */}
             <div className="w-[200px] h-[200px] border-[2.5px] border-dashed border-[rgba(212,32,39,0.4)] rounded-full flex items-center justify-center bg-transparent">
               <Image
                 src="/Logo-IDEO-AEL.png"
@@ -108,22 +97,8 @@ export default function AELDimensions() {
           </div>
         </div>
 
-        {/* Mobile: Stacked Layout */}
+        {/* Mobile: Stacked Layout - NO circle, just cards */}
         <div className="md:hidden flex flex-col gap-6">
-          {/* Logo at top */}
-          <div className="flex justify-center mb-2">
-            <div className="w-[160px] h-[160px] border-[2.5px] border-dashed border-[rgba(212,32,39,0.4)] rounded-full flex items-center justify-center bg-transparent">
-              <Image
-                src="/Logo-IDEO-AEL.png"
-                alt="IDEO AEL"
-                width={100}
-                height={100}
-                className="w-[100px] h-auto"
-              />
-            </div>
-          </div>
-
-          {/* Top Card */}
           <div className="bg-white rounded-xl p-6 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-[#E5E5E5] border-l-[3px] border-l-[#D42027]">
             <div className="w-10 h-10 rounded-lg bg-[rgba(212,32,39,0.08)] flex items-center justify-center mb-4">
               <BookOpen className="w-[22px] h-[22px] text-[#D42027]" strokeWidth={1.5} />
@@ -136,7 +111,6 @@ export default function AELDimensions() {
             </p>
           </div>
 
-          {/* Right Card */}
           <div className="bg-white rounded-xl p-6 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-[#E5E5E5] border-l-[3px] border-l-[#D42027]">
             <div className="w-10 h-10 rounded-lg bg-[rgba(212,32,39,0.08)] flex items-center justify-center mb-4">
               <Monitor className="w-[22px] h-[22px] text-[#D42027]" strokeWidth={1.5} />
@@ -149,20 +123,6 @@ export default function AELDimensions() {
             </p>
           </div>
 
-          {/* Bottom Card */}
-          <div className="bg-white rounded-xl p-6 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-[#E5E5E5] border-l-[3px] border-l-[#D42027]">
-            <div className="w-10 h-10 rounded-lg bg-[rgba(212,32,39,0.08)] flex items-center justify-center mb-4">
-              <Megaphone className="w-[22px] h-[22px] text-[#D42027]" strokeWidth={1.5} />
-            </div>
-            <h3 className="text-lg font-bold text-[#1A1A2E] mb-3">
-              {t('ael.dimensions.card4.title')}
-            </h3>
-            <p className="text-sm text-[#555] leading-relaxed">
-              {t('ael.dimensions.card4.description')}
-            </p>
-          </div>
-
-          {/* Left Card */}
           <div className="bg-white rounded-xl p-6 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-[#E5E5E5] border-l-[3px] border-l-[#D42027]">
             <div className="w-10 h-10 rounded-lg bg-[rgba(212,32,39,0.08)] flex items-center justify-center mb-4">
               <HeartHandshake className="w-[22px] h-[22px] text-[#D42027]" strokeWidth={1.5} />
@@ -172,6 +132,18 @@ export default function AELDimensions() {
             </h3>
             <p className="text-sm text-[#555] leading-relaxed">
               {t('ael.dimensions.card3.description')}
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-6 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-[#E5E5E5] border-l-[3px] border-l-[#D42027]">
+            <div className="w-10 h-10 rounded-lg bg-[rgba(212,32,39,0.08)] flex items-center justify-center mb-4">
+              <Megaphone className="w-[22px] h-[22px] text-[#D42027]" strokeWidth={1.5} />
+            </div>
+            <h3 className="text-lg font-bold text-[#1A1A2E] mb-3">
+              {t('ael.dimensions.card4.title')}
+            </h3>
+            <p className="text-sm text-[#555] leading-relaxed">
+              {t('ael.dimensions.card4.description')}
             </p>
           </div>
         </div>

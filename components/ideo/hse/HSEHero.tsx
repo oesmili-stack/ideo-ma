@@ -8,7 +8,7 @@ export default function HSEHero() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative min-h-[600px] flex items-center overflow-hidden bg-[#EDEDEE]">
+    <section className="relative min-h-[500px] sm:min-h-[600px] flex items-center overflow-hidden bg-[#EDEDEE]">
       {/* Background with gradient mask - pattern only on right side */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[#EDEDEE]" />
@@ -25,17 +25,17 @@ export default function HSEHero() {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             {/* Logo badge instead of text badge */}
-            <div className="mb-6">
+            <div className="mb-6 pt-16 sm:pt-0">
               <Image
                 src="/LogoHSELearning.png"
                 alt="HSE Learning"
                 width={400}
                 height={80}
-                className="h-[60px] sm:h-[75px] w-auto object-contain"
+                className="h-[50px] sm:h-[75px] w-auto object-contain"
               />
             </div>
 
@@ -53,7 +53,7 @@ export default function HSEHero() {
           </div>
 
           {/* VR woman image with blend mode */}
-          <div className="relative flex items-center justify-center h-[500px]">
+          <div className="relative flex items-center justify-center h-[350px] sm:h-[500px]">
             <Image
               src="/Image_realite_virtuelle.png"
               alt="Virtual Reality Training"

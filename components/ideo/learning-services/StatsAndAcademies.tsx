@@ -49,7 +49,7 @@ export default function StatsAndAcademies() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-[22px] md:text-[42px] font-bold text-white mb-1 md:mb-2 whitespace-nowrap">
+                <div className="text-[18px] md:text-[42px] font-bold text-white mb-1 md:mb-2 whitespace-nowrap">
                   {stat.number}
                 </div>
                 <div className="text-[11px] md:text-[14px] text-white opacity-90">

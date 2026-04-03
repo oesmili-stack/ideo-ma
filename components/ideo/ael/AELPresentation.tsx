@@ -28,7 +28,7 @@ export default function AELPresentation() {
             <div className="grid grid-cols-3 gap-8">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-4xl lg:text-5xl font-bold text-[#D42027] mb-2">
+                  <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#D42027] mb-2">
                     {stat.number}
                   </div>
                   <div className="text-sm text-[#888] leading-tight">
@@ -45,7 +45,7 @@ export default function AELPresentation() {
               alt="Logo IDEO Académie d'Entreprise en Ligne"
               width={600}
               height={250}
-              className="w-full h-auto"
+              className="w-full max-w-[250px] sm:max-w-full h-auto"
             />
           </div>
         </div>

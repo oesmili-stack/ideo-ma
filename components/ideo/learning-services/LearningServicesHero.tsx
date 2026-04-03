@@ -8,7 +8,7 @@ export default function LearningServicesHero() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative min-h-[600px] bg-[#EDEDEE] overflow-hidden">
+    <section className="relative min-h-[500px] sm:min-h-[600px] bg-[#EDEDEE] overflow-hidden">
       {/* Background pattern - fades in from right */}
       <div
         className="absolute inset-0 opacity-100"
@@ -20,8 +20,8 @@ export default function LearningServicesHero() {
         }}
       />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 pt-32 pb-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 pt-28 sm:pt-32 pb-12 sm:pb-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* LEFT SIDE - Text Content */}
           <div className="max-w-xl">
             {/* Surtitre */}
@@ -49,7 +49,7 @@ export default function LearningServicesHero() {
 
           {/* RIGHT SIDE - Image */}
           <div className="relative">
-            <div className="relative w-full h-[480px]">
+            <div className="relative w-full h-[300px] sm:h-[480px]">
               <Image
                 src="/Fichier_31@2x-8.png"
                 alt="Learning Services"

@@ -8,7 +8,7 @@ export default function ConseilHero() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden bg-[#EDEDEE]">
+    <section className="relative pt-28 sm:pt-32 pb-12 sm:pb-20 overflow-hidden bg-[#EDEDEE]">
       <div
         className="absolute inset-0"
         style={{
@@ -20,7 +20,7 @@ export default function ConseilHero() {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <div className="inline-block mb-6">
               <span className="badge-surtitre">
