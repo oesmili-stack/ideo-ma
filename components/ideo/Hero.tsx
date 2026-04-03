@@ -1,12 +1,21 @@
 'use client';
 
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GraduationCap, Monitor, BookOpen, MessageCircle } from 'lucide-react';
 
 export default function Hero() {
   const { t } = useLanguage();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const clientLogos: Array<{ src: string; large?: boolean; extraLarge?: boolean }> = [
     { src: '/BandeauONCF.png' },
@@ -135,7 +144,14 @@ export default function Hero() {
       {clientLogos.length > 0 && (
         <div className="absolute bottom-0 left-0 right-0 z-[1] overflow-hidden" style={{ height: '90px', background: 'transparent' }}>
           <div className="h-full flex items-center" style={{ background: 'transparent' }}>
-            <div className="flex animate-marquee items-center" style={{ gap: '48px', flexWrap: 'nowrap' }}>
+            <div
+              className="flex items-center"
+              style={{
+                gap: '48px',
+                flexWrap: 'nowrap',
+                animation: `marquee ${isMobile ? '20s' : '60s'} linear infinite`,
+              }}
+            >
               {[...clientLogos, ...clientLogos].map((logo, idx) => (
                 <div
                   key={idx}
@@ -191,9 +207,6 @@ export default function Hero() {
           50% {
             transform: translateY(-25px);
           }
-        }
-        .animate-marquee {
-          animation: marquee 60s linear infinite;
         }
         .animate-float {
           animation: float 3s ease-in-out infinite;
