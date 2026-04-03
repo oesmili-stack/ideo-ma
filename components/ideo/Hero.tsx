@@ -34,6 +34,9 @@ export default function Hero() {
     { src: '/BandeauCDG-capital.png', extraLarge: true },
   ];
 
+  // Triple the logos for smooth infinite scroll on all screen sizes
+  const tripleLogos = [...clientLogos, ...clientLogos, ...clientLogos];
+
   return (
     <section className="relative min-h-[80vh] overflow-hidden md:overflow-visible m-0 p-0" style={{ marginTop: 0, paddingTop: 0 }}>
       {/* Gradient Background with Pattern Overlay */}
@@ -136,7 +139,7 @@ export default function Hero() {
         <div className="absolute bottom-0 left-0 right-0 z-[1] overflow-hidden" style={{ height: '90px', background: 'transparent' }}>
           <div className="h-full flex items-center" style={{ background: 'transparent' }}>
             <div className="flex hero-marquee items-center" style={{ gap: '48px', flexWrap: 'nowrap' }}>
-              {[...clientLogos, ...clientLogos].map((logo, idx) => (
+              {tripleLogos.map((logo, idx) => (
                 <div
                   key={idx}
                   className="flex-shrink-0 flex items-center justify-center"
@@ -165,11 +168,11 @@ export default function Hero() {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(-50%);
+            transform: translateX(-33.33%);
           }
         }
         .hero-marquee {
-          animation: heroMarquee 15s linear infinite;
+          animation: heroMarquee 25s linear infinite;
         }
         @media (min-width: 768px) {
           .hero-marquee {
