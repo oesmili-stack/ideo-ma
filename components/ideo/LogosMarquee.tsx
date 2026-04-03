@@ -32,7 +32,7 @@ export default function LogosMarquee() {
   return (
     <section className="bg-[#AAAAAA] overflow-hidden" style={{ height: '60px', padding: '0' }}>
       <div className="h-full flex items-center">
-        <div className="flex animate-marquee items-center" style={{ gap: '48px', flexWrap: 'nowrap' }}>
+        <div className="flex animate-marquee md:animate-marquee-desktop items-center" style={{ gap: '48px', flexWrap: 'nowrap' }}>
           {[...clientLogos, ...clientLogos].map((logo, idx) => (
             <div
               key={idx}
@@ -63,7 +63,12 @@ export default function LogosMarquee() {
           }
         }
         .animate-marquee {
-          animation: marquee 60s linear infinite;
+          animation: marquee 25s linear infinite;
+        }
+        @media (min-width: 768px) {
+          .md\\:animate-marquee-desktop {
+            animation: marquee 60s linear infinite;
+          }
         }
       `}</style>
     </section>

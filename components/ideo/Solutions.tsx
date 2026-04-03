@@ -99,19 +99,19 @@ export default function Solutions() {
               src="/LogoBebyideo.png"
               alt="Be! by IDEO Logo"
               style={{
-                maxHeight: '55px',
+                maxHeight: '65px',
                 width: 'auto',
                 objectFit: 'contain'
               }}
-              className="mb-3 sm:max-h-[65px]"
+              className="mb-3"
             />
-            <p className="text-[#D42027] font-semibold mb-4 text-sm sm:text-base">
+            <p className="text-[#D42027] font-semibold mb-4">
               {t('solutions.languages.subtitle')}
             </p>
-            <p className="text-[#888780] leading-relaxed mb-4 text-sm sm:text-base">
+            <p className="text-[#888780] leading-relaxed mb-4">
               {t('solutions.languages.description')}
             </p>
-            <Link href="/solutions/be-langues" className="text-[#D42027] font-semibold hover:underline text-sm sm:text-base">
+            <Link href="/solutions/be-langues" className="text-[#D42027] font-semibold hover:underline">
               {t('solutions.languages.link')} →
             </Link>
           </div>

@@ -35,8 +35,8 @@ export default function Services() {
                 e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.06)';
               }}
             >
-              {/* Image banner */}
-              <div className="w-full h-[150px] sm:h-[200px] overflow-hidden hidden sm:block">
+              {/* Image banner - visible on all screens */}
+              <div className="w-full h-[150px] sm:h-[200px] overflow-hidden">
                 <img
                   src="/Conseil_Hero.png"
                   alt="Conseil et Ingénierie"
@@ -54,7 +54,7 @@ export default function Services() {
                 <h3 className="text-[20px] sm:text-[24px] font-bold text-[#1a1a1a] mb-3">
                   {t('services.consulting.title')}
                 </h3>
-                <p className="text-[#D42027] text-[14px] sm:text-[16px] mb-4" style={{ fontWeight: 600 }}>
+                <p className="text-[#D42027] text-[16px] sm:text-[18px] mb-4" style={{ fontWeight: 600 }}>
                   {t('services.consulting.subtitle')}
                 </p>
                 <p className="text-[14px] sm:text-[15px] text-[#555] leading-[1.7] mb-5">
@@ -91,8 +91,8 @@ export default function Services() {
                 e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.06)';
               }}
             >
-              {/* Image banner - cropped to remove red bar */}
-              <div className="w-full h-[150px] sm:h-[200px] overflow-hidden hidden sm:block">
+              {/* Image banner - visible on all screens */}
+              <div className="w-full h-[150px] sm:h-[200px] overflow-hidden">
                 <img
                   src="/ImageLearningServices.png"
                   alt="Learning Services"
@@ -110,7 +110,7 @@ export default function Services() {
                 <h3 className="text-[20px] sm:text-[24px] font-bold text-[#1a1a1a] mb-3">
                   {t('services.ils.title')}
                 </h3>
-                <p className="text-[#D42027] text-[14px] sm:text-[16px] mb-4" style={{ fontWeight: 600 }}>
+                <p className="text-[#D42027] text-[16px] sm:text-[18px] mb-4" style={{ fontWeight: 600 }}>
                   {t('services.ils.subtitle')}
                 </p>
                 <p className="text-[14px] sm:text-[15px] text-[#555] leading-[1.7] mb-5">

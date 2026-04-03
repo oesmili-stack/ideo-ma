@@ -55,7 +55,7 @@ function AnimatedCounter({ end, suffix = '', prefix = '', format = true }: { end
   };
 
   return (
-    <div ref={ref} className="text-[22px] md:text-4xl lg:text-5xl font-bold whitespace-nowrap">
+    <div ref={ref} className="text-[18px] md:text-4xl lg:text-5xl font-bold whitespace-nowrap">
       {prefix}{formatNumber(count)}{suffix}
     </div>
   );
@@ -94,28 +94,28 @@ export default function WhyChooseUs() {
               e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.06)';
             }}
           >
-            {/* ISO Badges */}
-            <div className="flex items-center justify-start gap-2 sm:gap-3 mb-6 overflow-hidden">
+            {/* ISO Badges - 3 logos side by side, smaller on mobile */}
+            <div className="flex items-center justify-start gap-2 mb-6">
               <Image
                 src="/ISO9001.png"
                 alt="ISO 9001"
                 width={80}
                 height={40}
-                className="h-[35px] sm:h-[40px] w-auto object-contain max-[1024px]:max-w-full max-[1024px]:h-auto"
+                className="h-[28px] sm:h-[40px] w-auto object-contain"
               />
               <Image
                 src="/ISO29990.png"
                 alt="ISO 29990"
                 width={80}
                 height={40}
-                className="h-[35px] sm:h-[40px] w-auto object-contain max-[1024px]:max-w-full max-[1024px]:h-auto"
+                className="h-[28px] sm:h-[40px] w-auto object-contain"
               />
               <Image
                 src="/ISO27001.png"
                 alt="ISO 27001"
                 width={80}
                 height={40}
-                className="h-[35px] sm:h-[40px] w-auto object-contain max-[1024px]:max-w-full max-[1024px]:h-auto"
+                className="h-[28px] sm:h-[40px] w-auto object-contain"
               />
             </div>
             <h3 className="text-[20px] font-bold text-[#1a1a1a] mb-3">
