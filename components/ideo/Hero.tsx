@@ -1,21 +1,12 @@
 'use client';
 
 import { useLanguage } from '@/contexts/LanguageContext';
-import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GraduationCap, Monitor, BookOpen, MessageCircle } from 'lucide-react';
 
 export default function Hero() {
   const { t } = useLanguage();
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 768);
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
 
   const clientLogos: Array<{ src: string; large?: boolean; extraLarge?: boolean }> = [
     { src: '/BandeauONCF.png' },
@@ -144,14 +135,7 @@ export default function Hero() {
       {clientLogos.length > 0 && (
         <div className="absolute bottom-0 left-0 right-0 z-[1] overflow-hidden" style={{ height: '90px', background: 'transparent' }}>
           <div className="h-full flex items-center" style={{ background: 'transparent' }}>
-            <div
-              className="flex items-center"
-              style={{
-                gap: '48px',
-                flexWrap: 'nowrap',
-                animation: `marquee ${isMobile ? '20s' : '60s'} linear infinite`,
-              }}
-            >
+            <div className="flex hero-marquee items-center" style={{ gap: '48px', flexWrap: 'nowrap' }}>
               {[...clientLogos, ...clientLogos].map((logo, idx) => (
                 <div
                   key={idx}
@@ -175,13 +159,21 @@ export default function Hero() {
         </div>
       )}
 
-      <style jsx>{`
-        @keyframes marquee {
+      <style jsx global>{`
+        @keyframes heroMarquee {
           0% {
             transform: translateX(0);
           }
           100% {
             transform: translateX(-50%);
+          }
+        }
+        .hero-marquee {
+          animation: heroMarquee 15s linear infinite;
+        }
+        @media (min-width: 768px) {
+          .hero-marquee {
+            animation: heroMarquee 60s linear infinite;
           }
         }
         @keyframes float {
