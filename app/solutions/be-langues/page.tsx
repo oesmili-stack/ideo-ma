@@ -12,6 +12,7 @@ import BeFAQ from '@/components/ideo/be-langues/BeFAQ';
 import FinalCTA from '@/components/ideo/FinalCTA';
 import Footer from '@/components/ideo/Footer';
 import DynamicMetadata from '@/components/ideo/DynamicMetadata';
+import { ServiceSchema } from '@/components/ideo/SchemaOrg';
 
 export default function BeLanguesPage() {
   return (
@@ -21,6 +22,12 @@ export default function BeLanguesPage() {
         titleEn="Be! Languages | Online Language Training for Companies in Morocco — IDEO Factory"
         descriptionFr="Formations en langues pour entreprises. Anglais, français, espagnol et 7 autres langues avec accompagnement tutoral personnalisé."
         descriptionEn="Language training for companies. English, French, Spanish and 7 other languages with personalized tutoring support."
+        canonicalPath="/solutions/be-langues"
+      />
+      <ServiceSchema
+        name="Be! Langues"
+        description="Formations en langues pour entreprises : anglais, français, espagnol, allemand, italien. E-learning 24/7 avec Speexx, classes virtuelles et coaching linguistique individuel."
+        url="/solutions/be-langues"
       />
       <Navbar variant="light" />
       <BeHero />

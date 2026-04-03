@@ -12,6 +12,7 @@ import HSEFAQ from '@/components/ideo/hse/HSEFAQ';
 import FinalCTA from '@/components/ideo/FinalCTA';
 import Footer from '@/components/ideo/Footer';
 import DynamicMetadata from '@/components/ideo/DynamicMetadata';
+import { ServiceSchema } from '@/components/ideo/SchemaOrg';
 
 export default function HSELearningPage() {
   return (
@@ -21,6 +22,12 @@ export default function HSELearningPage() {
         titleEn="HSE Learning | Occupational Health & Safety E-learning — IDEO Factory"
         descriptionFr="Formations e-learning en santé, sécurité et environnement. Modules interactifs pour sensibiliser vos équipes aux risques professionnels."
         descriptionEn="E-learning courses in health, safety and environment. Interactive modules to raise awareness of occupational risks."
+        canonicalPath="/solutions/hse-learning"
+      />
+      <ServiceSchema
+        name="HSE Learning"
+        description="Formations HSE en réalité virtuelle et simulations 3D en partenariat avec Immersive Factory. Sécurité au travail, prévention des risques, safety days."
+        url="/solutions/hse-learning"
       />
       <Navbar variant="light" />
       <HSEHero />

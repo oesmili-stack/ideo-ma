@@ -11,6 +11,7 @@ import DeploiementEtPacks from '@/components/ideo/cyberaware/DeploiementEtPacks'
 import CyberAwareCTA from '@/components/ideo/cyberaware/CyberAwareCTA';
 import Footer from '@/components/ideo/Footer';
 import DynamicMetadata from '@/components/ideo/DynamicMetadata';
+import { ServiceSchema } from '@/components/ideo/SchemaOrg';
 
 export default function CyberAwarePage() {
   return (
@@ -20,6 +21,12 @@ export default function CyberAwarePage() {
         titleEn="CyberAware — IDEO Factory | Digital Cybersecurity Academy in Morocco"
         descriptionFr="Sensibilisez vos collaborateurs à la cybersécurité et à la protection des données. 37 modules e-learning prêts à déployer."
         descriptionEn="Train your teams on cybersecurity and data protection. 37 e-learning modules ready to deploy."
+        canonicalPath="/solutions/cyberaware"
+      />
+      <ServiceSchema
+        name="CyberAware"
+        description="Programme de sensibilisation à la cybersécurité et à la protection des données personnelles adapté au contexte marocain. 37 modules e-learning en darija et français."
+        url="/solutions/cyberaware"
       />
       <Navbar variant="light" />
       <CyberAwareHero />
