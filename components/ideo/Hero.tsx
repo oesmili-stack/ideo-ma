@@ -1,12 +1,21 @@
 'use client';
 
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GraduationCap, Monitor, BookOpen, MessageCircle } from 'lucide-react';
 
 export default function Hero() {
   const { t } = useLanguage();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
 
   const clientLogos: Array<{ src: string; large?: boolean; extraLarge?: boolean }> = [
     { src: '/BandeauONCF.png' },
@@ -136,9 +145,15 @@ export default function Hero() {
 
       {/* Client Logos Strip - FIXED AT BOTTOM, NO BACKGROUND */}
       {clientLogos.length > 0 && (
-        <div className="absolute bottom-0 left-0 right-0 z-[1] overflow-hidden" style={{ height: '90px', background: 'transparent' }}>
+        <div className="absolute bottom-0 left-0 right-0 z-[1]" style={{ height: '90px', background: 'transparent', overflow: 'hidden' }}>
           <div className="h-full flex items-center" style={{ background: 'transparent' }}>
-            <div className="flex hero-marquee items-center hero-marquee-gap flex-nowrap">
+            <div
+              className="flex items-center flex-nowrap"
+              style={{
+                gap: isMobile ? '24px' : '48px',
+                animation: `heroMarquee ${isMobile ? '12s' : '60s'} linear infinite`,
+              }}
+            >
               {tripleLogos.map((logo, idx) => (
                 <div
                   key={idx}
@@ -161,6 +176,14 @@ export default function Hero() {
           </div>
         </div>
       )}
+
+      {/* Inline keyframes — guaranteed to work in production */}
+      <style dangerouslySetInnerHTML={{ __html: `
+        @keyframes heroMarquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-33.33%); }
+        }
+      `}} />
 
     </section>
   );
