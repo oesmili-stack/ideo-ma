@@ -1,7 +1,7 @@
 'use client';
 
 import { useLanguage } from '@/contexts/LanguageContext';
-import { MapPin, Phone, Mail, Clock, Linkedin, Youtube } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Linkedin, Youtube, Facebook } from 'lucide-react';
 import Link from 'next/link';
 
 export default function ContactInfo() {
@@ -61,7 +61,7 @@ export default function ContactInfo() {
 
         <div className="flex items-center gap-4 pt-4">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/company/ideo-factory/posts/?feedView=all"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 bg-[#F5F5F5] rounded-lg hover:bg-[#D42027] hover:text-white transition-colors"
@@ -69,12 +69,20 @@ export default function ContactInfo() {
             <Linkedin className="w-6 h-6" />
           </a>
           <a
-            href="https://youtube.com"
+            href="https://www.youtube.com/channel/UCVSImlquZhEg1IZ4KDr2G-w"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 bg-[#F5F5F5] rounded-lg hover:bg-[#D42027] hover:text-white transition-colors"
           >
             <Youtube className="w-6 h-6" />
+          </a>
+          <a
+            href="https://www.facebook.com/IDEOFactory/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-[#F5F5F5] rounded-lg hover:bg-[#D42027] hover:text-white transition-colors"
+          >
+            <Facebook className="w-6 h-6" />
           </a>
         </div>
       </div>

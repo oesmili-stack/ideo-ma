@@ -86,18 +86,18 @@ export default function LeParcours() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-3 md:gap-6">
           {steps.map((step, idx) => (
             <div
               key={idx}
-              className="bg-[#4FA8D1] text-white rounded-xl px-3.5 py-4 text-center"
+              className="bg-[#4FA8D1] text-white rounded-xl px-3.5 py-3 md:py-4 text-center"
             >
-              <div className="w-[34px] h-[34px] rounded-full bg-white bg-opacity-25 flex items-center justify-center mx-auto mb-4">
-                <span className="text-[22px] font-bold text-white">
+              <div className="w-[28px] h-[28px] md:w-[34px] md:h-[34px] rounded-full bg-white bg-opacity-25 flex items-center justify-center mx-auto mb-2 md:mb-4">
+                <span className="text-[18px] md:text-[22px] font-bold text-white">
                   {idx + 1}
                 </span>
               </div>
-              <p className="text-[13px] font-medium leading-relaxed">
+              <p className="text-[12px] md:text-[13px] font-medium leading-relaxed">
                 {step}
               </p>
             </div>

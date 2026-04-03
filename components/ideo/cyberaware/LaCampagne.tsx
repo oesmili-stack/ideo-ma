@@ -70,14 +70,14 @@ export default function LaCampagne() {
                 className="w-full h-full object-cover rounded-xl"
               />
             </div>
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-3 gap-2 md:gap-3">
               {benefits.map((benefit, idx) => (
                 <div
                   key={idx}
-                  className="bg-white rounded-lg p-3 border border-[#E5E7EB] text-center"
+                  className="bg-white rounded-lg p-2 md:p-3 border border-[#E5E7EB] text-center"
                 >
                   <benefit.icon className="w-5 h-5 text-[#4FA8D1] mx-auto mb-2" />
-                  <p className="text-xs text-[#1A1A2E] font-medium">
+                  <p className="text-[10px] md:text-xs text-[#1A1A2E] font-medium leading-tight">
                     {benefit.text}
                   </p>
                 </div>

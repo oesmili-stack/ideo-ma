@@ -132,7 +132,7 @@ export default function Products() {
               </div>
 
               {/* Platform mockup image */}
-              <div className="flex items-center justify-center mt-6 sm:mt-12">
+              <div className="flex items-center justify-center mt-2 sm:mt-8">
                 <Image
                   src="/MockupBis.png"
                   alt="IDEO Learning Suite Platform on Multiple Devices"
@@ -217,13 +217,13 @@ export default function Products() {
               </div>
 
               {/* Learning Content image */}
-              <div className="flex items-center justify-center mt-12">
+              <div className="flex items-center justify-center mt-4 sm:mt-8">
                 <Image
                   src="/ImageLearningContent2.png"
                   alt="IDEO Learning Content Competencies"
                   width={500}
                   height={500}
-                  className="w-auto h-auto object-contain max-w-[85%]"
+                  className="w-auto h-auto object-contain max-w-[95%]"
                 />
               </div>
             </div>
@@ -275,7 +275,7 @@ export default function Products() {
               </div>
 
               {/* Studio production image */}
-              <div className="flex items-center justify-center mt-12">
+              <div className="flex items-center justify-center mt-4 sm:mt-8">
                 <Image
                   src="/image copy copy.png"
                   alt="IDEO Learning Agency Studio Production"

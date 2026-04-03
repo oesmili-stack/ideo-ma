@@ -55,7 +55,7 @@ function AnimatedCounter({ end, suffix = '', prefix = '', format = true }: { end
   };
 
   return (
-    <div ref={ref} className="text-[18px] md:text-4xl lg:text-5xl font-bold whitespace-nowrap">
+    <div ref={ref} className="text-[24px] md:text-4xl lg:text-5xl font-bold whitespace-nowrap">
       {prefix}{formatNumber(count)}{suffix}
     </div>
   );
