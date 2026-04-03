@@ -27,12 +27,15 @@ export default function ComponentsOverview() {
     },
   ];
 
+  // Prevent ! from wrapping to next line
+  const componentsTitle = t('suite.components.title').replace(/ !/, '\u00A0!').replace(/ \!/, '\u00A0!');
+
   return (
     <section className="py-12 sm:py-20 bg-[#F5F5F5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#1A1A2E] mb-4">
-            {t('suite.components.title')}
+          <h2 className="text-[32px] sm:text-4xl lg:text-5xl font-bold text-[#1A1A2E] mb-4">
+            {componentsTitle}
           </h2>
           <p className="text-xl text-[#4A4A5A] max-w-4xl mx-auto">
             {t('suite.components.subtitle')}
