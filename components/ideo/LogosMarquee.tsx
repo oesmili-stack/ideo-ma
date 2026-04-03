@@ -1,8 +1,17 @@
 'use client';
 
-import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 export default function LogosMarquee() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   const clientLogos: Array<{ src: string; large?: boolean; extraLarge?: boolean }> = [
     { src: '/BandeauONCF.png' },
     { src: '/Bandeaucfg_banque.png' },
@@ -32,7 +41,14 @@ export default function LogosMarquee() {
   return (
     <section className="bg-[#AAAAAA] overflow-hidden" style={{ height: '60px', padding: '0' }}>
       <div className="h-full flex items-center">
-        <div className="flex animate-marquee md:animate-marquee-desktop items-center" style={{ gap: '48px', flexWrap: 'nowrap' }}>
+        <div
+          className="flex items-center"
+          style={{
+            gap: '48px',
+            flexWrap: 'nowrap',
+            animation: `marquee ${isMobile ? '20s' : '60s'} linear infinite`,
+          }}
+        >
           {[...clientLogos, ...clientLogos].map((logo, idx) => (
             <div
               key={idx}
@@ -60,14 +76,6 @@ export default function LogosMarquee() {
           }
           100% {
             transform: translateX(-50%);
-          }
-        }
-        .animate-marquee {
-          animation: marquee 25s linear infinite;
-        }
-        @media (min-width: 768px) {
-          .md\\:animate-marquee-desktop {
-            animation: marquee 60s linear infinite;
           }
         }
       `}</style>
