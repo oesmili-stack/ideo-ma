@@ -156,7 +156,7 @@ export default function Hero() {
                 width: 'max-content',
                 whiteSpace: 'nowrap',
                 gap: isMobile ? '24px' : '48px',
-                animation: `heroMarquee ${isMobile ? '25s' : '60s'} linear infinite`,
+                animation: `heroMarquee ${isMobile ? '40s' : '60s'} linear infinite`,
               }}
             >
               {tripleLogos.map((logo, idx) => (
