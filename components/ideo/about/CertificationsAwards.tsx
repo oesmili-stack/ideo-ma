@@ -150,7 +150,7 @@ export default function CertificationsAwards() {
                 }`}
                 style={{ transitionDelay: `${idx * 150}ms` }}
               >
-                <div className="text-[22px] md:text-[42px] font-bold text-white mb-1 md:mb-2 whitespace-nowrap">
+                <div className="text-[24px] md:text-[42px] font-bold text-white mb-1 md:mb-2 whitespace-nowrap">
                   {counter.prefix}
                   {formatNumber(counter.value)}
                   {counter.suffix || ''}

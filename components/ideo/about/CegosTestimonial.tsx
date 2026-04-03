@@ -13,12 +13,12 @@ export default function CegosTestimonial() {
         <div className="grid lg:grid-cols-5 gap-12 items-center">
           {/* LEFT COLUMN - Image 40% */}
           <div className="lg:col-span-2">
-            <div className="relative w-full h-[250px] md:h-[500px] rounded-xl overflow-hidden">
+            <div className="relative w-full h-[300px] md:h-[500px] rounded-xl overflow-hidden">
               <Image
                 src="/CEGOSbisbis.png"
                 alt="Cegos Learning Collection 2025"
                 fill
-                className="object-cover md:object-contain"
+                className="object-contain"
               />
             </div>
           </div>
