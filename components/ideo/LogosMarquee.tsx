@@ -38,21 +38,27 @@ export default function LogosMarquee() {
     { src: '/BandeauCDG-capital.png', extraLarge: true },
   ];
 
+  const doubleLogos = [...clientLogos, ...clientLogos];
+
   return (
     <section className="bg-[#AAAAAA] overflow-hidden" style={{ height: '60px', padding: '0' }}>
       <div className="h-full flex items-center">
         <div
-          className="flex items-center"
+          className="marquee-track"
           style={{
-            gap: '48px',
+            display: 'flex',
+            alignItems: 'center',
             flexWrap: 'nowrap',
-            animation: `marquee ${isMobile ? '20s' : '60s'} linear infinite`,
+            width: 'max-content',
+            whiteSpace: 'nowrap',
+            gap: isMobile ? '24px' : '48px',
+            animation: `internalMarquee ${isMobile ? '45s' : '60s'} linear infinite`,
           }}
         >
-          {[...clientLogos, ...clientLogos].map((logo, idx) => (
+          {doubleLogos.map((logo, idx) => (
             <div
               key={idx}
-              className="flex-shrink-0 flex items-center justify-center"
+              style={{ flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
             >
               <img
                 src={logo.src}
@@ -69,16 +75,13 @@ export default function LogosMarquee() {
         </div>
       </div>
 
-      <style jsx>{`
-        @keyframes marquee {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
+      {/* Inline keyframes — guaranteed to work in production */}
+      <style dangerouslySetInnerHTML={{ __html: `
+        @keyframes internalMarquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
         }
-      `}</style>
+      `}} />
     </section>
   );
 }
