@@ -148,8 +148,13 @@ export default function Hero() {
         <div className="absolute bottom-0 left-0 right-0 z-[1]" style={{ height: '90px', background: 'transparent', overflow: 'hidden' }}>
           <div className="h-full flex items-center" style={{ background: 'transparent' }}>
             <div
-              className="flex items-center flex-nowrap"
+              className="marquee-track"
               style={{
+                display: 'flex',
+                alignItems: 'center',
+                flexWrap: 'nowrap',
+                width: 'max-content',
+                whiteSpace: 'nowrap',
                 gap: isMobile ? '24px' : '48px',
                 animation: `heroMarquee ${isMobile ? '12s' : '60s'} linear infinite`,
               }}
@@ -157,16 +162,15 @@ export default function Hero() {
               {tripleLogos.map((logo, idx) => (
                 <div
                   key={idx}
-                  className="flex-shrink-0 flex items-center justify-center"
-                  style={{ background: 'transparent' }}
+                  style={{ flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'transparent' }}
                 >
                   <img
                     src={logo.src}
                     alt=""
-                    className="object-contain"
                     style={{
                       height: logo.extraLarge ? '72px' : logo.large ? '72px' : '50px',
                       width: 'auto',
+                      objectFit: 'contain',
                       mixBlendMode: 'screen'
                     }}
                   />

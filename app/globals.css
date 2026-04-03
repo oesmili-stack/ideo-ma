@@ -241,8 +241,17 @@
     * {
       box-sizing: border-box;
     }
-    section, div, article {
+    section, article {
       max-width: 100%;
+    }
+    div {
+      max-width: 100%;
+    }
+    .marquee-track, .marquee-track div {
+      max-width: none !important;
+    }
+    .marquee-track img {
+      max-width: none !important;
     }
     img {
       max-width: 100%;
