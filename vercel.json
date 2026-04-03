@@ -16,18 +16,38 @@
       "permanent": true
     },
     {
-      "source": "/on-parle-de-nous/",
+      "source": "/on-parle-de-nous/:path*",
       "destination": "/about",
       "permanent": true
     },
     {
-      "source": "/category/on-parle-de-nous",
-      "destination": "/about",
+      "source": "/contactez-le-leader-marocain-en-elearning",
+      "destination": "/contact",
       "permanent": true
     },
     {
-      "source": "/category/on-parle-de-nous/",
-      "destination": "/about",
+      "source": "/contactez-le-leader-marocain-en-elearning/",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/parcours-de-formation-elearning",
+      "destination": "/products/learning-content",
+      "permanent": true
+    },
+    {
+      "source": "/parcours-de-formation-elearning/",
+      "destination": "/products/learning-content",
+      "permanent": true
+    },
+    {
+      "source": "/modalites-digitales-ideo-factory",
+      "destination": "/products/learning-suite",
+      "permanent": true
+    },
+    {
+      "source": "/modalites-digitales-ideo-factory/",
+      "destination": "/products/learning-suite",
       "permanent": true
     },
     {
@@ -41,6 +61,36 @@
       "permanent": true
     },
     {
+      "source": "/learner-success-center-ideo-factory",
+      "destination": "/services/learning-services",
+      "permanent": true
+    },
+    {
+      "source": "/learner-success-center-ideo-factory/",
+      "destination": "/services/learning-services",
+      "permanent": true
+    },
+    {
+      "source": "/academies-dentreprise",
+      "destination": "/solutions/academie-entreprise-en-ligne",
+      "permanent": true
+    },
+    {
+      "source": "/academies-dentreprise/",
+      "destination": "/solutions/academie-entreprise-en-ligne",
+      "permanent": true
+    },
+    {
+      "source": "/communiques-de-presse-ideo-factory",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/communiques-de-presse-ideo-factory/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
       "source": "/ressources",
       "destination": "/",
       "permanent": true
@@ -48,6 +98,26 @@
     {
       "source": "/ressources/",
       "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/actualite-elearning-maroc/:path*",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/documentation-elearning-maroc/:path*",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/author/:path*",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/category/:path*",
+      "destination": "/about",
       "permanent": true
     },
     {
@@ -91,7 +161,17 @@
       "permanent": true
     },
     {
-      "source": "/category/:path*",
+      "source": "/2017/:path*",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/2016/:path*",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/2015/:path*",
       "destination": "/about",
       "permanent": true
     }
