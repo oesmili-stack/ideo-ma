@@ -1,6 +1,7 @@
 'use client';
 
 import { useLanguage } from '@/contexts/LanguageContext';
+import { FAQSchema } from '@/components/ideo/SchemaOrg';
 import {
   Accordion,
   AccordionContent,
@@ -87,6 +88,9 @@ export default function SuiteFAQ() {
             </Accordion>
           </div>
         </div>
+
+        {/* Structured data for Google rich results */}
+        <FAQSchema items={faqs} />
       </div>
     </section>
   );
