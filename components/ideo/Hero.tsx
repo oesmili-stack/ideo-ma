@@ -138,7 +138,7 @@ export default function Hero() {
       {clientLogos.length > 0 && (
         <div className="absolute bottom-0 left-0 right-0 z-[1] overflow-hidden" style={{ height: '90px', background: 'transparent' }}>
           <div className="h-full flex items-center" style={{ background: 'transparent' }}>
-            <div className="flex hero-marquee items-center" style={{ gap: '48px', flexWrap: 'nowrap' }}>
+            <div className="flex hero-marquee items-center hero-marquee-gap flex-nowrap">
               {tripleLogos.map((logo, idx) => (
                 <div
                   key={idx}
@@ -148,10 +148,10 @@ export default function Hero() {
                   <img
                     src={logo.src}
                     alt=""
+                    className="object-contain"
                     style={{
                       height: logo.extraLarge ? '72px' : logo.large ? '72px' : '50px',
                       width: 'auto',
-                      objectFit: 'contain',
                       mixBlendMode: 'screen'
                     }}
                   />

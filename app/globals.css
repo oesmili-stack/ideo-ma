@@ -269,12 +269,22 @@
 }
 
 .hero-marquee {
-  animation: heroMarquee 25s linear infinite;
+  animation: heroMarquee 12s linear infinite;
 }
 
 @media (min-width: 768px) {
   .hero-marquee {
     animation: heroMarquee 60s linear infinite;
+  }
+}
+
+.hero-marquee-gap {
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .hero-marquee-gap {
+    gap: 48px;
   }
 }
 
