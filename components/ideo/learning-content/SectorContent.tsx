@@ -72,7 +72,7 @@ export default function SectorContent() {
                 </div>
                 <div className="p-6">
                   <h3 className="font-bold text-[#1A1A2E] mb-2 text-base">{sector.title}</h3>
-                  <p className="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-2">{sector.description}</p>
+                  <p className="text-sm text-gray-600 mb-4 leading-relaxed">{sector.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {sector.tags.map((tag, tagIndex) => (
                       <span
@@ -106,7 +106,7 @@ export default function SectorContent() {
                 </div>
                 <div className="p-6">
                   <h3 className="font-bold text-[#1A1A2E] mb-2 text-base">{sector.title}</h3>
-                  <p className="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-2">{sector.description}</p>
+                  <p className="text-sm text-gray-600 mb-4 leading-relaxed">{sector.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {sector.tags.map((tag, tagIndex) => (
                       <span
