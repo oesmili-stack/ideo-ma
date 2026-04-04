@@ -3,6 +3,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { FAQSchema } from '@/components/ideo/SchemaOrg';
 
 export default function BeFAQ() {
   const { t } = useLanguage();
@@ -16,6 +17,9 @@ export default function BeFAQ() {
     { q: t('be.faq.q5'), a: t('be.faq.a5') },
     { q: t('be.faq.q6'), a: t('be.faq.a6') },
   ];
+
+  // Format for FAQSchema
+  const faqItems = faqs.map(f => ({ question: f.q, answer: f.a }));
 
   return (
     <section className="py-12 sm:py-20 bg-[#F7F7F8]">
@@ -49,6 +53,9 @@ export default function BeFAQ() {
             </div>
           ))}
         </div>
+
+        {/* Structured data for Google rich results */}
+        <FAQSchema items={faqItems} />
       </div>
     </section>
   );

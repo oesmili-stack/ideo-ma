@@ -22,6 +22,7 @@ export default function Home() {
         titleEn="IDEO Factory | E-learning Morocco — Digital Learning Leader since 2006"
         descriptionFr="La suite e-learning complète pour digitaliser la formation dans votre entreprise. Plateforme primée, catalogues internationaux, production sur mesure."
         descriptionEn="The complete e-learning suite to digitize training in your organization. Award-winning platform, international catalogs, custom content production."
+        canonicalPath="/"
       />
       <Navbar isHomePage={true} />
       <Hero />

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ChevronDown } from 'lucide-react';
+import { FAQSchema } from '@/components/ideo/SchemaOrg';
 
 export default function HSEFAQ() {
   const { t, language } = useLanguage();
@@ -63,6 +64,9 @@ export default function HSEFAQ() {
             </div>
           ))}
         </div>
+
+        {/* Structured data for Google rich results */}
+        <FAQSchema items={faqs.map(f => ({ question: f.question, answer: f.answer }))} />
       </div>
     </section>
   );
