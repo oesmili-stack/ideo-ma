@@ -243,7 +243,7 @@ const translations: Record<Language, TranslationKeys> = {
     'about.story.belief': 'Nous, on y a cru.',
     'about.story.text2': 'Dès le départ, notre conviction est claire : les collaborateurs marocains et africains méritent les mêmes outils de formation que ceux des plus grandes entreprises mondiales. Pas une version dégradée. Pas un sous-produit. Le meilleur, adapté à notre contexte.',
     'about.story.text3': 'En 20 ans, cette conviction est devenue réalité. IDEO Factory est aujourd\'hui le leader du Digital Learning au Maghreb — la seule entreprise africaine triplement certifiée ISO, la seule récompensée aux Brandon Hall Awards, le concours mondial le plus prestigieux en technologie e-learning. Deux fois plutôt qu\'une : en 2019 pour l\'Excellence en Innovation, et en 2024 pour la meilleure avancée en technologie de gestion de la formation.',
-    'about.story.text4': 'De notre premier projet à notre 500e déploiement, nous n\'avons jamais cessé d\'innover : plateforme LMS primée, CRM apprenant unique en son genre, studio de production broadcast intégré, partenariats exclusifs avec les leaders mondiaux de la formation, et aujourd\'hui l\'intelligence artificielle au cœur de nos outils de création.',
+    'about.story.text4': 'De notre premier projet à notre 100e déploiement, nous n\'avons jamais cessé d\'innover : plateforme LMS primée, CRM apprenant unique en son genre, studio de production broadcast intégré, partenariats exclusifs avec les leaders mondiaux de la formation, et aujourd\'hui l\'intelligence artificielle au cœur de nos outils de création.',
     'about.story.caption': '~50 experts passionnés',
 
     'about.values.title': 'Nos valeurs',
@@ -1360,7 +1360,7 @@ const translations: Record<Language, TranslationKeys> = {
     'about.story.belief': 'We did.',
     'about.story.text2': 'From day one, our conviction was clear: Moroccan and African professionals deserve the same training tools as the world\'s leading companies. Not a watered-down version. Not a lesser product. The very best, adapted to our context.',
     'about.story.text3': 'Twenty years later, that conviction has become reality. IDEO Factory is now the leading Digital Learning company in the Maghreb — the only African company with triple ISO certification, and the only one ever recognized at the Brandon Hall Awards, the world\'s most prestigious e-learning technology competition. Twice: in 2019 for Excellence in Innovation, and in 2024 for Best Advance in Learning Management Technology.',
-    'about.story.text4': 'From our first project to our 500th deployment, we have never stopped innovating: an award-winning LMS platform, a one-of-a-kind learner CRM, an integrated broadcast production studio, exclusive partnerships with global training leaders, and today artificial intelligence at the heart of our content creation tools.',
+    'about.story.text4': 'From our first project to our 100th deployment, we have never stopped innovating: an award-winning LMS platform, a one-of-a-kind learner CRM, an integrated broadcast production studio, exclusive partnerships with global training leaders, and today artificial intelligence at the heart of our content creation tools.',
     'about.story.caption': '~50 passionate experts',
 
     'about.values.title': 'Our values',
