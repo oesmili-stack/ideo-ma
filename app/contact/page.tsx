@@ -12,10 +12,11 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen">
       <DynamicMetadata
-        titleFr="Contact — IDEO Factory"
-        titleEn="Contact — IDEO Factory"
-        descriptionFr="Contactez nos experts e-learning. Demandez une démo gratuite ou un diagnostic de votre dispositif de formation."
-        descriptionEn="Contact our e-learning experts. Request a free demo or a training program assessment."
+        titleFr="Contact — IDEO Factory | Demandez une démo e-learning gratuite"
+        titleEn="Contact — IDEO Factory | Request a free e-learning demo"
+        descriptionFr="Contactez nos experts e-learning. Demandez une démo gratuite ou un diagnostic de votre dispositif de formation. Casablanca, Maroc."
+        descriptionEn="Contact our e-learning experts. Request a free demo or a training program assessment. Casablanca, Morocco."
+        canonicalPath="/contact"
       />
       <Navbar variant="light" />
 

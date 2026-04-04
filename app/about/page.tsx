@@ -17,8 +17,9 @@ export default function AboutPage() {
       <DynamicMetadata
         titleFr="À propos d'IDEO Factory | Pionnier du e-learning au Maroc depuis 2006"
         titleEn="About IDEO Factory | E-learning Pioneer in Morocco since 2006"
-        descriptionFr="Pionnier du Digital Learning au Maroc depuis 2006. Triple certification ISO, primé aux Brandon Hall Awards."
-        descriptionEn="Digital Learning pioneer in Morocco since 2006. Triple ISO certification, Brandon Hall Award winner."
+        descriptionFr="Pionnier du Digital Learning au Maroc depuis 2006. Triple certification ISO, primé aux Brandon Hall Awards. Partenaire exclusif Cegos depuis 16 ans."
+        descriptionEn="Digital Learning pioneer in Morocco since 2006. Triple ISO certification, Brandon Hall Award winner. Exclusive Cegos partner for 16 years."
+        canonicalPath="/about"
       />
       <Navbar variant="light" />
       <AboutHero />

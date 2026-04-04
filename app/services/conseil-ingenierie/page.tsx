@@ -10,6 +10,7 @@ import CeQueVousGagnez from '@/components/ideo/conseil/CeQueVousGagnez';
 import PreuveSociale from '@/components/ideo/conseil/PreuveSociale';
 import LogosMarquee from '@/components/ideo/LogosMarquee';
 import DynamicMetadata from '@/components/ideo/DynamicMetadata';
+import { ServiceSchema } from '@/components/ideo/SchemaOrg';
 
 export default function ConseilIngenieriePage() {
   return (
@@ -19,6 +20,12 @@ export default function ConseilIngenieriePage() {
         titleEn="Training Consulting & Engineering | Custom E-learning Support — IDEO Factory"
         descriptionFr="De l'audit à la feuille de route. Nos consultants conçoivent des parcours multimodaux alignés sur vos objectifs."
         descriptionEn="From audit to actionable roadmap. Our consultants design multimodal paths aligned with your goals."
+        canonicalPath="/services/conseil-ingenierie"
+      />
+      <ServiceSchema
+        name="Conseil et Ingénierie de Formation"
+        description="Accompagnement stratégique en digital learning. Audit de dispositifs de formation, feuille de route de digitalisation, ingénierie pédagogique multimodale, accompagnement au changement."
+        url="/services/conseil-ingenierie"
       />
       <Navbar variant="light" />
       <ConseilHero />

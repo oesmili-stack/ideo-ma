@@ -11,10 +11,11 @@ export default function ReferencesPage() {
   return (
     <main>
       <DynamicMetadata
-        titleFr="Nos références — IDEO Factory"
-        titleEn="Our references — IDEO Factory"
-        descriptionFr="Des entreprises leaders et institutions publiques nous font confiance. Découvrez nos références par secteur."
-        descriptionEn="Leading companies and public institutions trust us. Discover our references by sector."
+        titleFr="Nos références | +76 clients — Banques, Administrations, Énergie — IDEO Factory"
+        titleEn="Our references | 76+ clients — Banks, Government, Energy — IDEO Factory"
+        descriptionFr="Des entreprises leaders et institutions publiques nous font confiance. Découvrez nos références par secteur : banque, administration, énergie, transport."
+        descriptionEn="Leading companies and public institutions trust us. Discover our references by sector: banking, government, energy, transport."
+        canonicalPath="/references"
       />
       <Navbar variant="light" />
       <ReferencesHero />

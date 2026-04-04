@@ -12,6 +12,7 @@ import SectorContent from '@/components/ideo/learning-content/SectorContent';
 import WhyIDEOContent from '@/components/ideo/learning-content/WhyIDEOContent';
 import PedagogicalPartners from '@/components/ideo/learning-content/PedagogicalPartners';
 import DynamicMetadata from '@/components/ideo/DynamicMetadata';
+import { ServiceSchema } from '@/components/ideo/SchemaOrg';
 
 export default function LearningContentPage() {
   return (
@@ -21,6 +22,12 @@ export default function LearningContentPage() {
         titleEn="IDEO Learning Content | E-learning Catalog — Soft Skills, Languages, Digital"
         descriptionFr="+500 modules, 50+ parcours, 5 formats pédagogiques. Cegos, Speexx, ENI et contenus localisés."
         descriptionEn="500+ modules, 50+ paths, 5 learning formats. Cegos, Speexx, ENI and localized content."
+        canonicalPath="/products/learning-content"
+      />
+      <ServiceSchema
+        name="IDEO Learning Content"
+        description="Catalogue de +500 modules e-learning en soft skills, management, langues, bureautique et digital. Partenaires Cegos, Speexx, ENI. Contenus localisés pour le marché marocain et africain."
+        url="/products/learning-content"
       />
       <Navbar variant="light" />
       <LearningContentHero />

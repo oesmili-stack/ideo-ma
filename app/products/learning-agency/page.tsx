@@ -12,6 +12,7 @@ import OurStudios from '@/components/ideo/learning-agency/OurStudios';
 import Methodology from '@/components/ideo/learning-agency/Methodology';
 import StudioManagerSection from '@/components/ideo/learning-agency/StudioManagerSection';
 import DynamicMetadata from '@/components/ideo/DynamicMetadata';
+import { ServiceSchema } from '@/components/ideo/SchemaOrg';
 
 export default function LearningAgencyPage() {
   return (
@@ -21,6 +22,12 @@ export default function LearningAgencyPage() {
         titleEn="IDEO Learning Agency — Your custom e-learning studio"
         descriptionFr="Production de contenus e-learning sur mesure. Modules interactifs, vidéos, motion design, rapid learning, serious games."
         descriptionEn="Custom e-learning content production. Interactive modules, videos, motion design, rapid learning, serious games."
+        canonicalPath="/products/learning-agency"
+      />
+      <ServiceSchema
+        name="IDEO Learning Agency"
+        description="Studio de production e-learning sur mesure. Modules interactifs, MOOCs, vidéos pédagogiques, motion design, serious games. Studio TV professionnel avec plateau, fond vert et régie."
+        url="/products/learning-agency"
       />
       <Navbar variant="light" />
       <LearningAgencyHero />
